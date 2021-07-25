@@ -46,7 +46,7 @@ a:hover {
 .Rectangle {
   height: 3px;
   width: 155px;
-  background-color: #008dc8;
+  background-color: #6253a5;
   margin-bottom: 20px;
 }
 
@@ -57,7 +57,7 @@ a:hover {
 .Title {
   margin-top: 35px;
   margin-left: 15px;
-  color: #008dc8;
+  color: #6253a5;
   font-size: 35px;
   font-family: "Poppins", sans-serif;
 }

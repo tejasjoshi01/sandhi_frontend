@@ -1,15 +1,15 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import CandidateCard from "./CandidateCard.js";
+import JobCard from "./JobCard.js";
 import { Navbar } from "react-bootstrap";
 import Header from "./Header.js";
 import styles from "../../CSS/Candidate.module.css";
 import { Container, Jumbotron, Spinner } from "react-bootstrap";
 
-function Candidate(props) {
+function Jobs(props) {
   const [data, setData] = useState([]);
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/api/candidates/${props.category}`).then(
+    axios.get(`http://127.0.0.1:8000/api/jobs/${props.category}`).then(
       (res) => {
         // data = res.data.results;
         console.log(res.data.results);
@@ -67,7 +67,7 @@ function Candidate(props) {
         <Jumbotron style={{ backgroundColor: "white" }}>
           <Container className={styles.Cards}>
             {data.map((item) => {
-              return <CandidateCard item={item} />;
+              return <JobCard item={item} />;
             })}
           </Container>
         </Jumbotron>
@@ -76,4 +76,4 @@ function Candidate(props) {
   );
 }
 
-export default Candidate;
+export default Jobs;

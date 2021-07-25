@@ -59,7 +59,7 @@ a:global(.active) {
 }
 
 .SearchButton {
-  background-color: #008dc8;
+  background-color: #6253a5;
   border: none;
   color: white;
   padding: 4px 10px 4px 10px;
@@ -78,7 +78,7 @@ a:global(.active) {
 }
 
 .Dropdown {
-  background-color: #008dc8;
+  background-color: #6253a5;
   border: none;
   color: #fff;
   /* margin-left: 390%; */
@@ -106,7 +106,7 @@ a:global(.active) {
 
 }
 .Button {
-  background-color: #008dc8;
+  background-color: #6253a5;
   border: none;
   color: #fff;
   text-align: center;

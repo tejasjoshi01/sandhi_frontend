@@ -9,7 +9,7 @@
   font-weight: 50px;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  /* border-bottom: #008dc8 solid 3px; */
+  /* border-bottom: #6253a5 solid 3px; */
 }
 
 .Underline {
@@ -17,7 +17,7 @@
   width: 100px;
   margin-top: -5%;
   margin-left: 31.5%;
-  background-color: #008dc8;
+  background-color: #6253a5;
 }
 
 .Form {
@@ -35,7 +35,7 @@
 }
 
 .Button {
-  background-color: #008dc8;
+  background-color: #6253a5;
   border: none;
   color: #fff;
   text-align: center;
@@ -52,7 +52,7 @@
 }
 
 .Button:hover {
-  background-color: #008dc8;
+  background-color: #6253a5;
   padding-right: 25px;
   padding-left: 25px;
 }
