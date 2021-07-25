@@ -1,5 +1,6 @@
 import { Button, Form } from "react-bootstrap";
 import { useState } from "react";
+import  { Redirect } from 'react-router-dom'
 import styles from "../../CSS/Form.module.css";
 import axios from "axios";
 
@@ -37,7 +38,8 @@ function PostJobForm() {
       })
       .then((response) => {
         console.log(response);
-        alert("You have been registered succesfully ");
+        alert("You have been registered successfully ");
+        <Redirect to='/'/>
       })
       .catch((error) => {
         console.log(error);

@@ -26,8 +26,8 @@ function Banner(){
               <Col>
                 <p className={styles.SubHeading}>Employer</p>
                 <p style={{ textAlign: "justify" }}>
-                  <a href="#categories">See available candidates</a>
-                  or <a href="/jobs/post">Post New Job</a>
+                  <a href="#categories">See available candidates </a>
+                  or <a href="/jobs/register">Post New Job </a>
                   if you don't find any
                   suitable candidates
                 </p>
@@ -35,7 +35,7 @@ function Banner(){
               <Col>
                 <p className={styles.SubHeading}>Job Seeker</p>
                 <p style={{ textAlign: "justify" }}>
-                  <a href="/user/register">Register</a>
+                  <a href="/labour/register">Register </a>
                   your profile and get hired or manually
                   <a href="#categories"> apply</a> to jobs.
                 </p>

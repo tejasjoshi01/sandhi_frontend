@@ -28,6 +28,7 @@ function Header() {
           </Link>
         </Nav>
         <a href="/labour/register"> Register </a>
+        <a href="/jobs/register"> Post Job </a>
       </Navbar.Collapse>
       {/* <Navbar.Collapse id="basic-navbar-nav" className={styles.ShiftRight}>
         <Nav className="mr-auto">

@@ -8,13 +8,14 @@ function RegistrationForm() {
     first_name: "",
     last_name: "",
     age: null,
+    gender: null,
     address_line_1: "",
     address_line_2: "",
     state: "",
     pincode: null,
     contact_number: null,
     aadhar_number: null,
-    date_of_birth: null,
+    // date_of_birth: null,
     current_location: null,
     skill: null,
     message: "",
@@ -38,20 +39,20 @@ function RegistrationForm() {
                "first_name": formState.first_name,
                "last_name": formState.last_name,
                "age": formState.age,
+               "gender": formState.gender,
                "address_line_1":formState.address_line_1,
                "address_line_2": formState.address_line_2,
                "state": formState.state,
                "pincode": formState.pincode,
                "contact_number": formState.contact_number,
                "aadhar_number": formState.aadhar_number,
-               "date_of_birth": formState.date_of_birth,
                "current_location": formState.current_location,
                "skill": formState.skill,
                "message": formState.message,
       })
       .then((response) => {
         console.log(response);
-        alert("You have been registered succesfully ");
+        alert("You have been registered successfully ");
       })
       .catch((error) => {
         console.log(error);
@@ -101,6 +102,24 @@ function RegistrationForm() {
           //   style={{ marginLeft: "40px", marginTop: "30px" }}
             onChange={handleChange}
           />
+        </Form.Group>
+
+
+        <Form.Group>
+          <Form.Control
+            as="select"
+            className={styles.Input}
+            name="gender"
+            value={formState.gender}
+            defaultValue="Choose Your Gender"
+          //   style={{ marginTop: "30px", marginLeft: "40px" }}
+            onChange={handleChange}
+          >
+            <option>Choose Gender </option>
+            <option>M</option>
+            <option>F</option>
+            <option>O</option>
+          </Form.Control>
         </Form.Group>
 
         <Form.Group>
@@ -174,21 +193,6 @@ function RegistrationForm() {
             onChange={handleChange}
           />
         </Form.Group>
-
-        <Form.Group>
-          <Form.Control
-            className={styles.Input}
-            type="date"
-            name="date_of_birth"
-            value={formState.date_of_birth}
-            placeholder="Date of Birth"
-          //   style={{ marginLeft: "40px", marginTop: "30px" }}
-            onChange={handleChange}
-          />
-        </Form.Group>
-
-        {/* current_location: null, */}
-    {/* message: "", */}
 
         <Form.Group>
           <Form.Control
